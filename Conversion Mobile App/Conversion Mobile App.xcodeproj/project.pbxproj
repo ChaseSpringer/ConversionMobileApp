@@ -484,6 +484,7 @@
 				A49C58901BCC781F0013F746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A49C58911BCC781F0013F746 /* Build configuration list for PBXNativeTarget "Conversion Mobile AppTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +493,7 @@
 				A49C58931BCC781F0013F746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A49C58941BCC781F0013F746 /* Build configuration list for PBXNativeTarget "Conversion Mobile AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +502,7 @@
 				A49C58961BCC781F0013F746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
