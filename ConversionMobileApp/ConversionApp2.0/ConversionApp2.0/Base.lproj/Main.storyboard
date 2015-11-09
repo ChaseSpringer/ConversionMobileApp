@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fQV-Em-wkS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VVs-ij-C4r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
-        <scene sceneID="qji-K0-Cud">
+        <!--Navigation Controller-->
+        <scene sceneID="6cH-3J-C9y">
             <objects>
-                <navigationController title="Home" id="fQV-Em-wkS" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SHA-eL-ieQ">
+                <navigationController id="VVs-ij-C4r" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9rR-gf-yml">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="INH-Dc-Jz1"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sZf-09-xpj"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TJU-dm-wVC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qpg-6C-MRS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-655.5" y="305"/>
+            <point key="canvasLocation" x="-765" y="305"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -71,13 +71,13 @@
                         <constraints>
                             <constraint firstItem="9oW-3i-1dG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1iE-x5-CIv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PtY-6H-yd5" secondAttribute="trailing" constant="34" id="7vx-qM-Wt8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1GN-J3-utx" secondAttribute="bottom" constant="371" id="8JD-cM-7OO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sgf-de-f1Q" secondAttribute="trailing" constant="52" id="DRI-CW-1Fu"/>
+                            <constraint firstItem="1GN-J3-utx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="76" id="HJm-QY-eoQ"/>
                             <constraint firstItem="1GN-J3-utx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IaS-RO-Lfa"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1GN-J3-utx" secondAttribute="bottom" constant="363" id="Kzj-WX-U5j"/>
                             <constraint firstItem="PtY-6H-yd5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="34" id="MFe-y2-GUH"/>
                             <constraint firstItem="9oW-3i-1dG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="71" id="OEP-Wi-RbP"/>
                             <constraint firstItem="sgf-de-f1Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="53" id="PAe-by-ufS"/>
-                            <constraint firstItem="1GN-J3-utx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="84" id="PQb-9h-VB4"/>
                             <constraint firstItem="sgf-de-f1Q" firstAttribute="top" secondItem="PtY-6H-yd5" secondAttribute="bottom" constant="43" id="g7T-Ic-hFB"/>
                             <constraint firstItem="PtY-6H-yd5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jsY-i7-1qw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9oW-3i-1dG" secondAttribute="trailing" constant="70" id="k21-ek-NUC"/>
@@ -94,8 +94,8 @@
                                 <exclude reference="9oW-3i-1dG"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="HJm-QY-eoQ"/>
                                 <exclude reference="IaS-RO-Lfa"/>
-                                <exclude reference="PQb-9h-VB4"/>
                                 <exclude reference="onq-Ce-6GP"/>
                                 <exclude reference="q8A-xT-agz"/>
                                 <exclude reference="7vx-qM-Wt8"/>
@@ -109,7 +109,7 @@
                                 <exclude reference="OEP-Wi-RbP"/>
                                 <exclude reference="k21-ek-NUC"/>
                                 <exclude reference="pQh-QR-YIz"/>
-                                <exclude reference="Kzj-WX-U5j"/>
+                                <exclude reference="8JD-cM-7OO"/>
                                 <exclude reference="mp4-iX-7Wv"/>
                             </mask>
                         </variation>
@@ -120,8 +120,8 @@
                                 <include reference="9oW-3i-1dG"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="HJm-QY-eoQ"/>
                                 <include reference="IaS-RO-Lfa"/>
-                                <include reference="PQb-9h-VB4"/>
                                 <include reference="onq-Ce-6GP"/>
                                 <include reference="q8A-xT-agz"/>
                                 <include reference="7vx-qM-Wt8"/>
@@ -135,12 +135,12 @@
                                 <include reference="OEP-Wi-RbP"/>
                                 <include reference="k21-ek-NUC"/>
                                 <include reference="pQh-QR-YIz"/>
-                                <include reference="Kzj-WX-U5j"/>
+                                <include reference="8JD-cM-7OO"/>
                                 <include reference="mp4-iX-7Wv"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="0Uy-cY-NKg"/>
+                    <navigationItem key="navigationItem" id="SO3-4p-Zyj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
