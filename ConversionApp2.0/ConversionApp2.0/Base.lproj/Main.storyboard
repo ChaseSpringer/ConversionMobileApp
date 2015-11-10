@@ -38,9 +38,6 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" image="Conversions Button"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="63" y="334" width="275" height="50"/>
-                                </variation>
                                 <connections>
                                     <segue destination="Pih-Ki-UHG" kind="show" id="Z2X-K6-eOZ"/>
                                 </connections>
@@ -49,9 +46,6 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" image="Functions Button"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="63" y="392" width="275" height="50"/>
-                                </variation>
                                 <connections>
                                     <segue destination="SYE-uI-JGJ" kind="show" id="SPm-Ag-svY"/>
                                 </connections>
@@ -67,9 +61,6 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" image="Converter Button"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="63" y="450" width="275" height="50"/>
-                                </variation>
                                 <connections>
                                     <segue destination="Iuf-vt-g4Y" kind="show" id="Pki-sH-rdV"/>
                                 </connections>
@@ -97,16 +88,16 @@
                                 <exclude reference="9oW-3i-1dG"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="HJm-QY-eoQ"/>
-                                <exclude reference="IaS-RO-Lfa"/>
-                                <exclude reference="onq-Ce-6GP"/>
-                                <exclude reference="q8A-xT-agz"/>
+                                <exclude reference="Vmc-gr-3op"/>
+                                <exclude reference="kr2-Ks-EK5"/>
                                 <exclude reference="c0g-nH-bSB"/>
                                 <exclude reference="kkk-R7-cg5"/>
                                 <exclude reference="8yJ-EY-aaX"/>
                                 <exclude reference="Rx4-Kf-qz7"/>
-                                <exclude reference="Vmc-gr-3op"/>
-                                <exclude reference="kr2-Ks-EK5"/>
+                                <exclude reference="HJm-QY-eoQ"/>
+                                <exclude reference="IaS-RO-Lfa"/>
+                                <exclude reference="onq-Ce-6GP"/>
+                                <exclude reference="q8A-xT-agz"/>
                                 <exclude reference="8JD-cM-7OO"/>
                             </mask>
                         </variation>
@@ -117,16 +108,16 @@
                                 <include reference="9oW-3i-1dG"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="HJm-QY-eoQ"/>
-                                <include reference="IaS-RO-Lfa"/>
-                                <include reference="onq-Ce-6GP"/>
-                                <include reference="q8A-xT-agz"/>
+                                <include reference="Vmc-gr-3op"/>
+                                <include reference="kr2-Ks-EK5"/>
                                 <include reference="c0g-nH-bSB"/>
                                 <include reference="kkk-R7-cg5"/>
                                 <include reference="8yJ-EY-aaX"/>
                                 <include reference="Rx4-Kf-qz7"/>
-                                <include reference="Vmc-gr-3op"/>
-                                <include reference="kr2-Ks-EK5"/>
+                                <include reference="HJm-QY-eoQ"/>
+                                <include reference="IaS-RO-Lfa"/>
+                                <include reference="onq-Ce-6GP"/>
+                                <include reference="q8A-xT-agz"/>
                                 <include reference="8JD-cM-7OO"/>
                             </mask>
                         </variation>
