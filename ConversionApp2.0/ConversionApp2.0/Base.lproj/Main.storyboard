@@ -45,7 +45,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgf-de-f1Q">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
-                                <state key="normal" image="Functions Button"/>
+                                <state key="normal" image="Formulas Button"/>
                                 <connections>
                                     <segue destination="SYE-uI-JGJ" kind="show" id="SPm-Ag-svY"/>
                                 </connections>
@@ -255,6 +255,6 @@
     <resources>
         <image name="Conversions Button" width="200" height="50"/>
         <image name="Converter Button" width="200" height="50"/>
-        <image name="Functions Button" width="200" height="50"/>
+        <image name="Formulas Button" width="200" height="50"/>
     </resources>
 </document>
