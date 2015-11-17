@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VVs-ij-C4r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VVs-ij-C4r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -224,10 +224,11 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Miles Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zpu-2o-rsW">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="116" width="360" height="30"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="36" y="116" width="328" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="Convert:" destination="Iuf-vt-g4Y" eventType="touchUpInside" id="2R7-eP-bOC"/>
@@ -235,19 +236,23 @@
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efZ-Bu-9ll">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="366" width="360" height="31"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="36" y="366" width="328" height="31"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bt-ho-20g">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
-                                <state key="normal" title="Convert"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="121" y="204" width="157" height="30"/>
+                                <state key="normal" title="Convert">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="122" y="204" width="157" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="Convert:" destination="Iuf-vt-g4Y" eventType="touchUpInside" id="kwD-jH-i8h"/>
@@ -255,12 +260,28 @@
                             </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.57931034482758625" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zpu-2o-rsW" firstAttribute="top" secondItem="IEk-04-oHi" secondAttribute="bottom" constant="52" id="8wo-Yr-Mfc"/>
+                            <constraint firstItem="Zpu-2o-rsW" firstAttribute="centerX" secondItem="oju-BT-e0L" secondAttribute="centerX" id="FFv-a2-Jrj"/>
+                            <constraint firstItem="8Bt-ho-20g" firstAttribute="top" secondItem="Zpu-2o-rsW" secondAttribute="bottom" constant="58" id="RK9-93-2kL"/>
+                            <constraint firstItem="8Bt-ho-20g" firstAttribute="centerX" secondItem="oju-BT-e0L" secondAttribute="centerX" id="alF-DM-Uww"/>
+                            <constraint firstItem="efZ-Bu-9ll" firstAttribute="centerX" secondItem="8Bt-ho-20g" secondAttribute="centerX" id="egb-FC-g7A"/>
+                            <constraint firstItem="efZ-Bu-9ll" firstAttribute="top" secondItem="8Bt-ho-20g" secondAttribute="bottom" constant="132" id="j1C-OZ-hfV"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Zpu-2o-rsW"/>
                                 <exclude reference="efZ-Bu-9ll"/>
                                 <exclude reference="8Bt-ho-20g"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="8wo-Yr-Mfc"/>
+                                <exclude reference="FFv-a2-Jrj"/>
+                                <exclude reference="RK9-93-2kL"/>
+                                <exclude reference="alF-DM-Uww"/>
+                                <exclude reference="egb-FC-g7A"/>
+                                <exclude reference="j1C-OZ-hfV"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -268,6 +289,14 @@
                                 <include reference="Zpu-2o-rsW"/>
                                 <include reference="efZ-Bu-9ll"/>
                                 <include reference="8Bt-ho-20g"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="8wo-Yr-Mfc"/>
+                                <include reference="FFv-a2-Jrj"/>
+                                <include reference="RK9-93-2kL"/>
+                                <include reference="alF-DM-Uww"/>
+                                <include reference="egb-FC-g7A"/>
+                                <include reference="j1C-OZ-hfV"/>
                             </mask>
                         </variation>
                     </view>
