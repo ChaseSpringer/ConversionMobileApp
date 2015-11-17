@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05B294861BFAE11A00980A7E /* ConverterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B294851BFAE11A00980A7E /* ConverterViewController.m */; };
 		05DD7CE61BED700400B90371 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD7CE51BED700400B90371 /* AppDelegate.swift */; };
 		05DD7CE81BED700400B90371 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD7CE71BED700400B90371 /* ViewController.swift */; };
 		05DD7CEB1BED700400B90371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05DD7CE91BED700400B90371 /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05B294831BFAE11900980A7E /* ConversionApp2.0-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ConversionApp2.0-Bridging-Header.h"; sourceTree = "<group>"; };
+		05B294841BFAE11A00980A7E /* ConverterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConverterViewController.h; sourceTree = "<group>"; };
+		05B294851BFAE11A00980A7E /* ConverterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConverterViewController.m; sourceTree = "<group>"; };
 		05DD7CE21BED700400B90371 /* ConversionApp2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConversionApp2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05DD7CE51BED700400B90371 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05DD7CE71BED700400B90371 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,9 +104,12 @@
 				05DD7CE51BED700400B90371 /* AppDelegate.swift */,
 				05DD7CE71BED700400B90371 /* ViewController.swift */,
 				05DD7CE91BED700400B90371 /* Main.storyboard */,
+				05B294841BFAE11A00980A7E /* ConverterViewController.h */,
+				05B294851BFAE11A00980A7E /* ConverterViewController.m */,
 				05DD7CEC1BED700400B90371 /* Assets.xcassets */,
 				05DD7CEE1BED700400B90371 /* LaunchScreen.storyboard */,
 				05DD7CF11BED700400B90371 /* Info.plist */,
+				05B294831BFAE11900980A7E /* ConversionApp2.0-Bridging-Header.h */,
 			);
 			path = ConversionApp2.0;
 			sourceTree = "<group>";
@@ -187,6 +194,7 @@
 		05DD7CDA1BED700400B90371 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Don't Let Your Teams Be Dreams";
 				TargetAttributes = {
@@ -255,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05B294861BFAE11A00980A7E /* ConverterViewController.m in Sources */,
 				05DD7CE81BED700400B90371 /* ViewController.swift in Sources */,
 				05DD7CE61BED700400B90371 /* AppDelegate.swift in Sources */,
 			);
@@ -396,10 +405,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ConversionApp2.0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CSC160.ConversionApp2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ConversionApp2.0/ConversionApp2.0-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -407,10 +419,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ConversionApp2.0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CSC160.ConversionApp2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ConversionApp2.0/ConversionApp2.0-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -481,6 +495,7 @@
 				05DD7D0C1BED700400B90371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05DD7D0D1BED700400B90371 /* Build configuration list for PBXNativeTarget "ConversionApp2.0Tests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +504,7 @@
 				05DD7D0F1BED700400B90371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05DD7D101BED700400B90371 /* Build configuration list for PBXNativeTarget "ConversionApp2.0UITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +513,7 @@
 				05DD7D121BED700400B90371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -210,10 +210,10 @@
             </objects>
             <point key="canvasLocation" x="1240.5" y="305"/>
         </scene>
-        <!--View Controller-->
+        <!--Converter View Controller-->
         <scene sceneID="lQy-NR-tp3">
             <objects>
-                <viewController id="Iuf-vt-g4Y" sceneMemberID="viewController">
+                <viewController id="Iuf-vt-g4Y" customClass="ConverterViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IEk-04-oHi"/>
                         <viewControllerLayoutGuide type="bottom" id="fql-Zt-b6i"/>
@@ -222,30 +222,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yc2-61-ted">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Miles Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zpu-2o-rsW">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="116" width="360" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Convert:" destination="Iuf-vt-g4Y" eventType="touchUpInside" id="2R7-eP-bOC"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efZ-Bu-9ll">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="144" y="289" width="77" height="21"/>
+                                    <rect key="frame" x="20" y="366" width="360" height="31"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bt-ho-20g">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                <state key="normal" title="Convert"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="121" y="204" width="157" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Convert:" destination="Iuf-vt-g4Y" eventType="touchUpInside" id="kwD-jH-i8h"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="0.57931034482758625" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="Yc2-61-ted"/>
+                                <exclude reference="Zpu-2o-rsW"/>
+                                <exclude reference="efZ-Bu-9ll"/>
+                                <exclude reference="8Bt-ho-20g"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="Yc2-61-ted"/>
+                                <include reference="Zpu-2o-rsW"/>
+                                <include reference="efZ-Bu-9ll"/>
+                                <include reference="8Bt-ho-20g"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="Distance" destination="Zpu-2o-rsW" id="OfT-zr-f8H"/>
+                        <outlet property="Result" destination="efZ-Bu-9ll" id="VMN-wg-EmR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qzd-Go-xph" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
