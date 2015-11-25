@@ -15,6 +15,8 @@
 		05DD7CF01BED700400B90371 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05DD7CEE1BED700400B90371 /* LaunchScreen.storyboard */; };
 		05DD7CFB1BED700400B90371 /* ConversionApp2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD7CFA1BED700400B90371 /* ConversionApp2_0Tests.swift */; };
 		05DD7D061BED700400B90371 /* ConversionApp2_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD7D051BED700400B90371 /* ConversionApp2_0UITests.swift */; };
+		05FC54301C05296500AB143C /* myData.db in Resources */ = {isa = PBXBuildFile; fileRef = 05FC542F1C05296500AB143C /* myData.db */; };
+		05FC54321C052A3500AB143C /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FC54311C052A3500AB143C /* libsqlite3.0.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		05DD7D011BED700400B90371 /* ConversionApp2.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConversionApp2.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05DD7D051BED700400B90371 /* ConversionApp2_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionApp2_0UITests.swift; sourceTree = "<group>"; };
 		05DD7D071BED700400B90371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05FC542F1C05296500AB143C /* myData.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = myData.db; sourceTree = "<group>"; };
+		05FC54311C052A3500AB143C /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05FC54321C052A3500AB143C /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,7 @@
 		05DD7CD91BED700400B90371 = {
 			isa = PBXGroup;
 			children = (
+				05FC54311C052A3500AB143C /* libsqlite3.0.tbd */,
 				05DD7CE41BED700400B90371 /* ConversionApp2.0 */,
 				05DD7CF91BED700400B90371 /* ConversionApp2.0Tests */,
 				05DD7D041BED700400B90371 /* ConversionApp2.0UITests */,
@@ -101,6 +107,7 @@
 		05DD7CE41BED700400B90371 /* ConversionApp2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				05FC542F1C05296500AB143C /* myData.db */,
 				05DD7CE51BED700400B90371 /* AppDelegate.swift */,
 				05DD7CE71BED700400B90371 /* ViewController.swift */,
 				05DD7CE91BED700400B90371 /* Main.storyboard */,
@@ -200,6 +207,7 @@
 				TargetAttributes = {
 					05DD7CE11BED700400B90371 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = K35A56WXSS;
 					};
 					05DD7CF51BED700400B90371 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -237,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05DD7CF01BED700400B90371 /* LaunchScreen.storyboard in Resources */,
+				05FC54301C05296500AB143C /* myData.db in Resources */,
 				05DD7CED1BED700400B90371 /* Assets.xcassets in Resources */,
 				05DD7CEB1BED700400B90371 /* Main.storyboard in Resources */,
 			);
@@ -406,10 +415,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ConversionApp2.0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CSC160.ConversionApp2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ConversionApp2.0/ConversionApp2.0-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -420,10 +432,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ConversionApp2.0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CSC160.ConversionApp2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ConversionApp2.0/ConversionApp2.0-Bridging-Header.h";
 			};
 			name = Release;
