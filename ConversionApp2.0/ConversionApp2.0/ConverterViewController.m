@@ -178,7 +178,7 @@ NSString * myDB=@"myData.db";
     if(sqlite3_open([filePath UTF8String], &database) == SQLITE_OK) {
         
         //NSString *temp = [NSString stringWithFormat:@"insert into allusers (user_id,user_name) VALUES (%@,%@)",user_id,user_name];
-        const char *sqlStatement = "insert into users (username,email) VALUES (?,?)";
+        const char *sqlStatement = "insert into users (name,formula) VALUES (?,?)";
         sqlite3_stmt *compiledStatement;
         if(sqlite3_prepare_v2(database, sqlStatement, -1, &compiledStatement, NULL) == SQLITE_OK)    {
             sqlite3_bind_text( compiledStatement, 1,[theU UTF8String], -1, SQLITE_TRANSIENT);
