@@ -185,7 +185,7 @@
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.31372549019607843" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -465,17 +465,18 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efZ-Bu-9ll">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bt-ho-20g">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bt-ho-20g">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
-                                <state key="normal" title="Convert">
+                                <state key="normal" image="Convert Button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact"/>
                                 <connections>
                                     <action selector="Convert:" destination="Iuf-vt-g4Y" eventType="touchUpInside" id="kwD-jH-i8h"/>
                                 </connections>
@@ -484,12 +485,13 @@
                         <animations/>
                         <color key="backgroundColor" white="0.57931034482758625" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Zpu-2o-rsW" firstAttribute="top" secondItem="IEk-04-oHi" secondAttribute="bottom" constant="52" id="8wo-Yr-Mfc"/>
-                            <constraint firstItem="Zpu-2o-rsW" firstAttribute="centerX" secondItem="oju-BT-e0L" secondAttribute="centerX" id="FFv-a2-Jrj"/>
-                            <constraint firstItem="8Bt-ho-20g" firstAttribute="top" secondItem="Zpu-2o-rsW" secondAttribute="bottom" constant="58" id="RK9-93-2kL"/>
-                            <constraint firstItem="8Bt-ho-20g" firstAttribute="centerX" secondItem="oju-BT-e0L" secondAttribute="centerX" id="alF-DM-Uww"/>
-                            <constraint firstItem="efZ-Bu-9ll" firstAttribute="centerX" secondItem="8Bt-ho-20g" secondAttribute="centerX" id="egb-FC-g7A"/>
-                            <constraint firstItem="efZ-Bu-9ll" firstAttribute="top" secondItem="8Bt-ho-20g" secondAttribute="bottom" constant="132" id="j1C-OZ-hfV"/>
+                            <constraint firstItem="Zpu-2o-rsW" firstAttribute="top" secondItem="IEk-04-oHi" secondAttribute="bottom" constant="52" id="2K6-Jm-Psa"/>
+                            <constraint firstAttribute="bottom" secondItem="efZ-Bu-9ll" secondAttribute="bottom" constant="229" id="5l7-f8-QqK"/>
+                            <constraint firstItem="8Bt-ho-20g" firstAttribute="leading" secondItem="oju-BT-e0L" secondAttribute="leadingMargin" constant="73" id="8pG-xD-MD9"/>
+                            <constraint firstItem="8Bt-ho-20g" firstAttribute="top" secondItem="Zpu-2o-rsW" secondAttribute="bottom" constant="43" id="FlH-zk-ijD"/>
+                            <constraint firstItem="efZ-Bu-9ll" firstAttribute="centerX" secondItem="8Bt-ho-20g" secondAttribute="centerX" id="OjS-52-CIR"/>
+                            <constraint firstItem="Zpu-2o-rsW" firstAttribute="centerX" secondItem="oju-BT-e0L" secondAttribute="centerX" id="W5b-cI-2QN"/>
+                            <constraint firstItem="8Bt-ho-20g" firstAttribute="centerX" secondItem="Zpu-2o-rsW" secondAttribute="centerX" id="jBb-TP-blY"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -498,12 +500,13 @@
                                 <exclude reference="8Bt-ho-20g"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="8wo-Yr-Mfc"/>
-                                <exclude reference="FFv-a2-Jrj"/>
-                                <exclude reference="RK9-93-2kL"/>
-                                <exclude reference="alF-DM-Uww"/>
-                                <exclude reference="egb-FC-g7A"/>
-                                <exclude reference="j1C-OZ-hfV"/>
+                                <exclude reference="2K6-Jm-Psa"/>
+                                <exclude reference="W5b-cI-2QN"/>
+                                <exclude reference="8pG-xD-MD9"/>
+                                <exclude reference="FlH-zk-ijD"/>
+                                <exclude reference="jBb-TP-blY"/>
+                                <exclude reference="5l7-f8-QqK"/>
+                                <exclude reference="OjS-52-CIR"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -513,12 +516,13 @@
                                 <include reference="8Bt-ho-20g"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="8wo-Yr-Mfc"/>
-                                <include reference="FFv-a2-Jrj"/>
-                                <include reference="RK9-93-2kL"/>
-                                <include reference="alF-DM-Uww"/>
-                                <include reference="egb-FC-g7A"/>
-                                <include reference="j1C-OZ-hfV"/>
+                                <include reference="2K6-Jm-Psa"/>
+                                <include reference="W5b-cI-2QN"/>
+                                <include reference="8pG-xD-MD9"/>
+                                <include reference="FlH-zk-ijD"/>
+                                <include reference="jBb-TP-blY"/>
+                                <include reference="5l7-f8-QqK"/>
+                                <include reference="OjS-52-CIR"/>
                             </mask>
                         </variation>
                     </view>
@@ -534,6 +538,7 @@
     </scenes>
     <resources>
         <image name="Conversions Button" width="200" height="50"/>
+        <image name="Convert Button" width="150" height="50"/>
         <image name="Converter Button" width="200" height="50"/>
         <image name="Delete Button" width="150" height="50"/>
         <image name="Formulas Button" width="200" height="50"/>
