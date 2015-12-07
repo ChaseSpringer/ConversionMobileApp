@@ -8,5 +8,5 @@ The app has all of the formulae stored on it and a calculator for convenient cal
 The Conversion2.0 is the latest version of the application. The auto tests are all in the Conversion2.0 folder as well.
 We have the formulae for the app stored in one folder. All pdf's for the project submission parts are in the main folder.
 
-The docs can be built and run with the VVDocumenter in the Xcode IDE.
+The docs can be built and run with the VVDocumenter plug-in in the Xcode IDE.
 The code can easily be run, tested, and edited also in the Xcode IDE.
