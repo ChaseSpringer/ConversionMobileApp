@@ -1765,11 +1765,12 @@
                                 <exclude reference="efZ-Bu-9ll"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="0T6-eB-7yD"/>
-                                <exclude reference="dq9-el-GDc"/>
+                                <exclude reference="hgs-al-lW3"/>
                                 <exclude reference="Whz-z9-fxK"/>
                                 <exclude reference="ZpE-gK-1gd"/>
                                 <exclude reference="wCE-kM-hFh"/>
+                                <exclude reference="0T6-eB-7yD"/>
+                                <exclude reference="dq9-el-GDc"/>
                                 <exclude reference="aRQ-Yv-gIm"/>
                                 <exclude reference="spy-PC-UyX"/>
                                 <exclude reference="6L0-3a-3i6"/>
@@ -1779,7 +1780,6 @@
                                 <exclude reference="5Rj-SC-6wE"/>
                                 <exclude reference="Jt6-tZ-EjG"/>
                                 <exclude reference="pnv-05-2Vb"/>
-                                <exclude reference="hgs-al-lW3"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1791,11 +1791,12 @@
                                 <include reference="efZ-Bu-9ll"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="0T6-eB-7yD"/>
-                                <include reference="dq9-el-GDc"/>
+                                <include reference="hgs-al-lW3"/>
                                 <include reference="Whz-z9-fxK"/>
                                 <include reference="ZpE-gK-1gd"/>
                                 <include reference="wCE-kM-hFh"/>
+                                <include reference="0T6-eB-7yD"/>
+                                <include reference="dq9-el-GDc"/>
                                 <include reference="aRQ-Yv-gIm"/>
                                 <include reference="spy-PC-UyX"/>
                                 <include reference="6L0-3a-3i6"/>
@@ -1805,7 +1806,6 @@
                                 <include reference="5Rj-SC-6wE"/>
                                 <include reference="Jt6-tZ-EjG"/>
                                 <include reference="pnv-05-2Vb"/>
-                                <include reference="hgs-al-lW3"/>
                             </mask>
                         </variation>
                     </view>
