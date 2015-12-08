@@ -22,6 +22,8 @@
 - (IBAction)update:(id)sender;
 @property (strong, nonatomic) IBOutlet UILabel *listNames;
 @property (strong, nonatomic) IBOutlet UITextField *ider;
+@property (strong, nonatomic) IBOutlet UITextField *Distance2;
+@property (strong, nonatomic) IBOutlet UITextField *Distance3;
 
 
 

@@ -29,21 +29,25 @@ NSString * myDB=@"myData.db";
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 - (IBAction)Convert:(id)sender {
+    if (_Distance.isFirstResponder) {
     double miles = [_Distance.text doubleValue];
     double kilometers = miles*1.609;
     NSString* resultString = [[NSString alloc] initWithFormat:@"%.2f Kilometers", kilometers];
     _Result.text = resultString;
+    }
+    else if (_Distance2.isFirstResponder) {
+        double inches = [_Distance2.text doubleValue];
+        double centimeters = inches*2.54;
+        NSString* resultString = [[NSString alloc] initWithFormat:@"%.2f Centimeters", centimeters];
+        _Result.text = resultString;
+    }
+    else {
+        double feet = [_Distance3.text doubleValue];
+        double meters = feet*.3048;
+        NSString* resultString = [[NSString alloc] initWithFormat:@"%.2f Meters", meters];
+        _Result.text = resultString;
+    }
 }
 - (IBAction)view:(id)sender {
     
@@ -74,7 +78,7 @@ NSString * myDB=@"myData.db";
                 userN = [[NSString alloc]initWithUTF8String:(const char *) sqlite3_column_text(statement, 0)];
                 formulaN = [[NSString alloc]initWithUTF8String:(const char *) sqlite3_column_text(statement, 1)];
                 theID = [[NSString alloc]initWithUTF8String:(const char *) sqlite3_column_text(statement, 2)];
-                myLine= [NSString stringWithFormat:@"%@%@%@%@",myLine,userN,theID,@" - "];
+                myLine= [NSString stringWithFormat:@"%@%@%@%@%@%@%@",myLine,userN,@": ",formulaN,@": ",theID,@" - "];
                 
                 
             }
