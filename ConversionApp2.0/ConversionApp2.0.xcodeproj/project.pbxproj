@@ -207,7 +207,7 @@
 				TargetAttributes = {
 					05DD7CE11BED700400B90371 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = K35A56WXSS;
+						DevelopmentTeam = 737C4SHWL8;
 					};
 					05DD7CF51BED700400B90371 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -418,12 +418,14 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ConversionApp2.0/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "CSC160.ConversionApp2-0";
+				PRODUCT_BUNDLE_IDENTIFIER = "CSCIProjectTeam.Conversion-Mobile-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ConversionApp2.0/ConversionApp2.0-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -435,11 +437,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ConversionApp2.0/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "CSC160.ConversionApp2-0";
+				PRODUCT_BUNDLE_IDENTIFIER = "CSCIProjectTeam.Conversion-Mobile-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ConversionApp2.0/ConversionApp2.0-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

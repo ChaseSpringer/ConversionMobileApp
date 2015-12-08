@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VVs-ij-C4r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VVs-ij-C4r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -1372,7 +1373,7 @@
                         <viewControllerLayoutGuide type="top" id="rzb-aI-kxJ"/>
                         <viewControllerLayoutGuide type="bottom" id="m7C-ol-9WY"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QnY-7P-b0M">
+                    <view key="view" contentMode="scaleToFill" id="QnY-7P-b0M" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1384,30 +1385,11 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of Formula" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f9h-MR-9po">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="oCs-BL-e7P"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="oCs-BL-e7P"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="oCs-BL-e7P"/>
-                                    </mask>
-                                </variation>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Formula" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t7w-fQ-X7U">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" keyboardAppearance="alert" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hsy-Dl-fzc">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
@@ -1417,7 +1399,7 @@
                                     <constraint firstAttribute="height" constant="30" id="agm-7u-cN6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" keyboardAppearance="alert"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="VO5-iN-DNI"/>
@@ -1518,6 +1500,28 @@
                                     <action selector="deleteName:" destination="SYE-uI-JGJ" eventType="touchUpInside" id="RAA-yY-Hbp"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of Formula" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f9h-MR-9po">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="oCs-BL-e7P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" keyboardAppearance="alert"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="oCs-BL-e7P"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="oCs-BL-e7P"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="clickedBackground" destination="SYE-uI-JGJ" eventType="editingDidEnd" id="pFc-E1-gjO"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.51372549019607838" green="0.51372549019607838" blue="0.51372549019607838" alpha="1" colorSpace="calibratedRGB"/>
@@ -1549,13 +1553,13 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Onu-bE-DDW"/>
-                                <exclude reference="f9h-MR-9po"/>
                                 <exclude reference="t7w-fQ-X7U"/>
                                 <exclude reference="Hsy-Dl-fzc"/>
                                 <exclude reference="wjE-C3-b1H"/>
                                 <exclude reference="cOY-fF-GH4"/>
                                 <exclude reference="nUi-ZA-ZZd"/>
                                 <exclude reference="cyP-MM-IV3"/>
+                                <exclude reference="f9h-MR-9po"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="lAr-hD-7HP"/>
@@ -1586,13 +1590,13 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Onu-bE-DDW"/>
-                                <include reference="f9h-MR-9po"/>
                                 <include reference="t7w-fQ-X7U"/>
                                 <include reference="Hsy-Dl-fzc"/>
                                 <include reference="wjE-C3-b1H"/>
                                 <include reference="cOY-fF-GH4"/>
                                 <include reference="nUi-ZA-ZZd"/>
                                 <include reference="cyP-MM-IV3"/>
+                                <include reference="f9h-MR-9po"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="lAr-hD-7HP"/>
@@ -1620,6 +1624,9 @@
                                 <include reference="fC2-Xc-vmG"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <action selector="clickedBackground" destination="SYE-uI-JGJ" eventType="touchUpInside" id="Xy2-Wd-RQ2"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="formula" destination="t7w-fQ-X7U" id="dtc-j4-keO"/>
@@ -1640,7 +1647,7 @@
                         <viewControllerLayoutGuide type="top" id="IEk-04-oHi"/>
                         <viewControllerLayoutGuide type="bottom" id="fql-Zt-b6i"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="oju-BT-e0L">
+                    <view key="view" contentMode="scaleToFill" id="oju-BT-e0L" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1652,7 +1659,7 @@
                                     <constraint firstAttribute="height" constant="30" id="nPF-i9-9Py"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="GUS-8u-SYZ"/>
@@ -1695,11 +1702,12 @@
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Inches Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KrG-q4-DdF">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="LHM-ey-75b"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="LHM-ey-75b"/>
@@ -1713,11 +1721,12 @@
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Feet Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j6M-l9-Se5">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="hKA-CL-b48"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="hKA-CL-b48"/>
@@ -1808,6 +1817,9 @@
                                 <include reference="pnv-05-2Vb"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <action selector="clickedBackground" destination="Iuf-vt-g4Y" eventType="touchUpInside" id="Eql-uw-bkw"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="Distance" destination="Zpu-2o-rsW" id="OfT-zr-f8H"/>

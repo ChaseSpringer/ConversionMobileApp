@@ -198,6 +198,12 @@ NSString * myDB=@"myData.db";
     sqlite3_close(database);
 }
 
+- (IBAction) clickedBackground
+{
+    [self.view endEditing:YES];    
+}
+
+
 //========================================WRITABLE DATABSE PATH=======================
 - (NSString *) getWritableDBPath {
     
